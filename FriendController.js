@@ -1,4 +1,13 @@
 angular.module("app").controller('FriendController', function($scope){
+  $scope.itemFilter = [
+    {name: "Name", value:'name'},
+    {name: "Friends", value:'friend_count'},
+    {name: "City", value:'current_location.city'},
+    {name: "State", value:'current_location.state'},
+    {name: "Country", value:'current_location.country'}
+  ]
+
+
   $scope.friends =[
     {
       "name": "Preston McNeil",
